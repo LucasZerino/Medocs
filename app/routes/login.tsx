@@ -54,6 +54,7 @@ export const action: ActionFunction = async ({ request }) => {
             case 'register': {
                 cpf = cpf as string
                 return await register({userName, password, cpf})
+          
             }
             default:
                 return json({error: 'Invalid form data'}, {status: 400})
