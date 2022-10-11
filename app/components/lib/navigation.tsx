@@ -2,8 +2,13 @@ import {
     HiOutlineViewGrid,
     HiDocumentDuplicate,
     HiOutlineUsers,
-    HiOutlineCog
+    HiOutlineCog,
+    HiNewspaper
 } from 'react-icons/hi'
+
+import {
+    BsFillFileArrowDownFill
+} from "react-icons/bs";
 
 export const DASHBOARD_SIDEBAR_LINKS = [
     {
@@ -33,4 +38,24 @@ export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
         path: "/settings",
         icon: <HiOutlineCog />
     },
+]
+
+export const DASHBOARD_DOCS_LINKS = [
+    {
+        key: 'novo documento',
+        label: 'Novo documento',
+        path: "/createDocs",
+        icon: <HiNewspaper />
+    },
+]
+
+export const DASHBOARD_DOCS_FUNCTIONS = [
+    {
+        key: 'downloadTemplate',
+        label: 'Baixar Template',
+        functi: "onGeneratePDF",
+        path: "/createDocs",
+        icon: <BsFillFileArrowDownFill />
+    },
+    
 ]
